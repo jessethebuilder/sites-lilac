@@ -1,6 +1,6 @@
 import type { Menu, MenuItem, MenuResult, MenuSection } from "@/types/menu";
 
-const MENU_PATH = "/api/v1/menus/rosies";
+const MENU_PATH = "/api/v1/menus/lilac";
 
 const fallbackMenu: Menu = {
   name: "Lilac",
@@ -213,7 +213,11 @@ export async function getMenu(): Promise<MenuResult> {
   }
 
   try {
-    const response = await fetch(`${baseUrl.replace(/\/$/, "")}${MENU_PATH}`, {
+    const menuUrl = baseUrl.includes("/api/v1/menus/")
+      ? baseUrl
+      : `${baseUrl.replace(/\/$/, "")}${MENU_PATH}`;
+
+    const response = await fetch(menuUrl, {
       headers: {
         "ngrok-skip-browser-warning": "true",
       },
