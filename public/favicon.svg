@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Lilac</title>
+  <rect width="64" height="64" rx="14" fill="#fffaf2"/>
+  <path d="M32 55V26" fill="none" stroke="#466b42" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 51C18 52 13 43 14 37c10-1 18 4 18 14Zm1-5c0-11 8-17 18-16 0 10-6 17-18 16Z" fill="#73965d"/>
+  <defs>
+    <g id="flower">
+      <path d="M0 0C-13-1-10-13-3-9L0-5l3-4C10-13 13-1 0 0c13 1 10 13 3 9L0 5l-3 4C-10 13-13 1 0 0Z"/>
+      <circle r="2" fill="#fff0c9"/>
+    </g>
+  </defs>
+  <g fill="#9562b5">
+    <use href="#flower" x="32" y="16"/>
+    <use href="#flower" x="22" y="29"/>
+    <use href="#flower" x="42" y="29"/>
+  </g>
+  <use href="#flower" x="32" y="37" fill="#b084cc"/>
+</svg>
